@@ -1,0 +1,1509 @@
+/* The Pagenation  */
+.stepper {
+    position: absolute;
+    right: 20px;
+    text-align: right;
+    left: 300px;
+    margin-top: -10px;
+}
+.stepper:before,
+.stepper:after {
+    display: table;
+    content: "";
+}
+.stepper:after {
+    clear: both;
+}
+.stepper > ul {
+    counter-reset: li;
+    position: relative;
+    padding: 0;
+    margin: 0px 0;
+    width: 100%;
+}
+.stepper > ul li {
+    list-style: none;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background: #666;
+    cursor: pointer !important;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    padding-top: 5px;
+}
+.stepper > ul li:before {
+
+}
+.stepper > ul li:hover {
+    background-color: #999999;
+}
+.stepper > ul li.current,
+.stepper > ul li.complete {
+    transition: all 0.2s ease;
+}
+.stepper > ul li.current {
+    background-color: #144878;
+}
+.stepper > ul li.current:hover {
+    background-color: #C80003;
+}
+.stepper > ul li.complete {
+    background: #2C6DAC;
+}
+.stepper > ul li.complete:hover {
+    background-color: #C80003;
+}
+
+.sell-button {
+    margin-top: 30px;
+}
+.sell-button img {
+    border-radius: 8px;
+}
+
+/* The dropdown Menu and Search */
+.searchvansinput {
+    border: solid 1px rgba(0,0,0,.4);
+    height: 35px;
+    padding: 4px;
+    width: 75%;
+}
+.searchvansinputbtn {
+    border: solid 1px rgba(0,0,0,.4);
+    height: 35px;
+    padding: 4px;
+    width: 20%;
+}
+.vansort {
+    display: none;
+    list-style: none;
+    position: absolute;
+    z-index: 9999999;
+    background-color: #fff;
+    border-radius: 10px;
+    border: solid 1px #2C6DAC;
+    padding: 10px;
+}
+
+.pagenumber {
+    font-size: 12px;
+}
+.sort-dropdown {
+    position: absolute;
+}
+
+
+
+.vehicle-options-list {
+    position: relative;
+    margin-left: 0px;
+    padding-left: 10px;
+}
+.vehicle-options-list li {
+    font-size: 15px;
+}
+.vehicle-options-list:after {
+    content: ' ';
+    clear: both;
+    display: block;
+}
+
+.thumb-container {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 460px;
+    margin-top: 5px;
+    padding-bottom: 3px;
+}
+.thumb-container .inside {
+    margin-top: -3px;
+
+}
+.vertical-thumb:last-child {
+    padding-bottom: 0px !important;
+}
+
+
+
+.vehicleresultsmainx {
+    border: solid 1px rgba(0,0,0,.2);
+    margin-bottom: 0px;
+    padding: 0px;
+    background-color: #fff;
+    position: relative;
+    -webkit-box-shadow: 5px 5px 14px 0px rgba(0,0,0,0.13);
+    -moz-box-shadow: 5px 5px 14px 0px rgba(0,0,0,0.13);
+    box-shadow: 5px 5px 14px 0px rgba(0,0,0,0.13);
+    font-size: 15px;
+
+}
+.vehicleresultsmainx:hover {
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 8px 0px #414141;
+    -moz-box-shadow: 0px 0px 8px 0px #414141;
+    box-shadow: 0px 0px 8px 1px #414141;
+
+}
+.vehicleresultsmainx .year-float {
+    position: absolute;
+    font-weight: bold;
+    color: #fff;
+    top: 5px;
+    left: 5px;
+    font-size: 28px;
+    text-shadow: 2px 2px 2px #414141, -2px 2px 2px #414141, -2px -2px 2px #414141, 2px -2px 2px #414141;
+    -webkit-transform: rotate(348deg);
+    -moz-transform: rotate(348deg);
+    -o-transform: rotate(348deg);
+}
+.vehicleresultsmainx .sold-float {
+    position: absolute;
+    font-weight: bold;
+    color: #ff0045;
+    top: 44px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 67px;
+    text-shadow: 2px 2px 2px #FFFFFF, -2px 2px 2px #FFFFFF, -2px -2px 2px #FFFFFF, 2px -2px 2px #FFFFFF;
+
+}
+.vehicleresultsmainx .hold-float {
+    position: absolute;
+    font-weight: bold;
+    color: #0063ae;
+    top: 44px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 67px;
+    text-shadow: 2px 2px 2px #FFFFFF, -2px 2px 2px #FFFFFF, -2px -2px 2px #FFFFFF, 2px -2px 2px #FFFFFF;
+}
+.vehicleresultsmainx .condition-90 {
+    position: absolute;
+    font-weight: bold;
+    color: #fff;
+    top: 3px;
+    left: 0px;
+    font-size: 10px;
+    padding: 2px;
+    height: 18px;
+    width: 28px;
+    text-align: center;
+}
+.vehicleresultsmainx .condition-90 {
+    background-color: #8b8b8b;
+}
+.vehicleresultsmainx .condition-90.Call {
+    background-color: #464646;
+}
+.vehicleresultsmainx .condition-90.New {
+    background-color: #39a854;
+}
+.vehicleresultsmainx .condition-90.Used {
+    background-color: #0063ae;
+}
+.vehicleresultsmainx .condition-90.chassis:hover {
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+    padding-top: 0;
+}
+.vehicleresultsmainx .condition-90.chassis:hover:before {
+    content: 'Chassis Condition: ';
+}
+.vehicleresultsmainx .condition-90.conv:hover {
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+    padding-top: 0;
+}
+.vehicleresultsmainx .condition-90.conv:hover:before {
+    content: 'Conversion Condition: ';
+}
+.vehicleresultsmainx a {
+    color: #000;
+}
+.vehicleresultsmainx .full-row {
+    white-space: nowrap;
+    overflow: hidden;
+    border-top: solid 1px rgba(0,0,0,.1);
+    padding: 2px 0;
+    height: 26px;
+    position: relative;
+}
+.vehicleresultsmainx .full-row.no-border {
+    border: none;
+}
+.vehicleresultsmainx .half-row:first-child {
+    float: left;
+    width: 70px;
+    font-size: 12px;
+    color: #535353;
+    padding-top: 2px;
+    border-right: solid 1px rgba(0, 0, 0, .1);
+}
+.vehicleresultsmainx .half-row:last-child {
+
+    float: left;
+    padding-left: 5px;
+    width: calc(100% - 70px);
+}
+.vehicleresultsmainx .make-model {
+    font-weight: bold;
+    font-size: 16px;
+    padding-left: 32px;
+}
+.vehicleresultsmainx .conversion {
+    margin-bottom: 15px;
+    font-size: 14px;
+    margin-top: -5px;
+    padding-left: 32px;
+}
+
+
+
+/* List all vans SIDEBAR stuff */
+
+.sidebarfeature {
+    border: 1px rgba(0,0,0,.2) solid;
+    background-color: rgba(0,0,0,.0);
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.sidebarfeature.main-panel {
+    min-height: 552px;
+
+}
+.filter {
+    border: 1px #9E9E9E solid;
+    background-color: #2C6DAC;
+    margin-bottom: 5px;
+    padding: 5px;
+    color:#FFF;
+    font-size:14px;
+}
+a .list-group-item:hover {
+    color:#FFF;
+}
+.filter-remove {
+    border: 1px #9E9E9E solid;
+    background-color: #C80003;
+    margin-bottom: 5px;
+    padding: 5px;
+    color:#FFF;
+    font-size:14px;
+}
+.filter > a, .filter-remove > a {
+    color: #FFF;
+    margin-bottom:-2px;
+    display:block;
+}
+
+.tiles p {
+    font-size: 17px;
+    margin-bottom: 0;
+}
+
+.tiles h2 {
+    font-size: 19px;
+    font-family: Roboto;
+    margin: 50px 0 10px 0;
+    background-color: #ECECEC;
+    padding: 2px 0 2px 2px;
+    color: #000;
+    position: relative;
+
+}
+.rootwrapper h2:first-of-type, .sidebarfeature h2:first-of-type {
+    margin: 50px 0 10px 0;
+}
+
+
+
+.tiles .tab_container > h2:first-of-type {
+    margin: 10px 0 10px 0;
+}
+.tiles h2.alth2 {
+    font-size: 22px;
+    font-family: Roboto;
+    margin: 0px 0 10px 0;
+    padding: 0 0 10px 0;
+    border-bottom: solid 2px rgba(0,0,0,.2);
+}
+
+.tiles .conversion_body h2 {
+    font-size: 21px;
+    border: none;
+    background-color: transparent;
+    color: #000;
+    margin: 25px 0 10px 0;
+    padding: 0;
+    text-shadow: none;
+    font-weight: bold;
+}
+.tiles .conversion_body h2:before {
+    display: none;
+}
+
+
+
+
+a.vehicletabs.btnbar {
+    box-shadow: none;
+    position: relative;
+    text-decoration: none !important;
+    padding: 10px 14px;
+    font: bold 16px "Open Sans";
+    text-shadow: none;
+    color: #2D2D2D;
+    margin-right: 0px;
+    border: 1px solid #C7C7C7;
+    border-right: none;
+    background-color: #f5f5f5;
+    border-radius: 0;
+    text-transform: capitalize;
+    display: inline-block;
+    border-bottom: none;
+    float: left;
+    cursor: pointer;
+
+}
+
+a.vehicletabs.btnbar:last-child {
+    border-right: solid 1px #C7C7C7 !important;
+
+}
+
+
+a.vehicletabs.btnbar:hover {
+    color: #2D2D2D;
+    background: #d0d0d0;
+    text-decoration: none !important;
+    padding: 10px 14px;
+    box-shadow: none;
+    border: 1px solid #C7C7C7;
+    border-bottom: none;
+    margin-right: -1px;
+    border-color: #C7C7C7;
+}
+
+
+a.vehicletabs.btnbar.active {
+    color: #FFF;
+    text-decoration: none !important;
+    border: 1px solid #2D2D2D;
+    box-shadow: none;
+    padding: 15px 14px;
+    margin-top: -11px;
+    box-shadow: none;
+    margin-right: 0px;
+    border-color: #2D2D2D;
+    background-color: #2D2D2D;
+    position: relative;
+}
+
+a.vehicletabs.btnbar.active:before {
+
+    border-style: solid;
+    border-width: 10px 18px 0 18px;
+    border-color: #2D2D2D transparent transparent transparent;
+    display: block;
+    position: absolute;
+    bottom: -14px;
+    left: calc(50% - 18px);
+    content: ' ';
+}
+a.vehicletabs.btnbar.active:after {
+
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 0 0px 4px;
+    border-color: transparent transparent transparent #4f4f4f;
+    display: block;
+    position: absolute;
+    top: -1px;
+    right: -5px;
+    content: ' ';
+    z-index: 2;
+}
+a.vehicletabs.btnbar.active:last-child:after {
+
+    display: none;
+}
+
+
+.rowA {
+    background-color:transparent;
+    border-bottom: solid 1px rgba(0, 0, 0, .2);
+}
+.rowB {
+    background-color:transparent;
+    border-bottom: solid 1px rgba(0,0,0,.2);
+}
+.rowAll {
+    padding:4px;
+    font-size:16px;
+    white-space:nowrap;
+    overflow:hidden;
+    clear:left;
+    min-height: 34px;
+}
+.rowFloat {
+    overflow:hidden;
+}
+.rowFloat.conversion {
+    white-space: normal;
+}
+.rowTitle {
+    float:left;
+    width:80px;
+    font-size:13px;
+    padding-top: 2px;
+    color: #585858;
+
+}
+.rowTitle.conversion {
+
+    width: 30%;
+    white-space: normal;
+    padding-right: 20px;
+}
+.rowTitle.over {
+    float:none;
+    margin-bottom: 5px;
+}
+.vehiclebutton {
+    width:29%;
+    text-align:center;
+    padding:10px;
+    margin:5px;
+    background-color:#F00;
+    color:#FFF;
+    float:left;
+}
+.conversion-logo {
+    max-width: 160px;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    border: solid 1px rgba(0,0,0,.2);
+}
+.conversion-banner {
+    width: calc(100% + 22px);
+    margin-left: -11px;
+    margin-top: -10px;
+    margin-bottom: 0px;
+
+}
+
+.vehicle-infobox {
+    border: solid 1px rgba(0, 0, 0, .2);
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.vehicle-infobox .upper {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.vehicle-infobox .lower {
+    font-size: 19px;
+    font-weight: normal;
+}
+
+
+.btn-default.van-for-sale {
+    text-decoration: none !important;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0px 0 5px 0;
+    border: none;
+    border-radius: 0;
+    display: block;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    height: 35px;
+    position: relative;
+    box-sizing: border-box;
+    border: solid 1px #000;
+    background-color: #2D2D2D;
+}
+.btn-default.van-for-sale:hover {
+
+    text-decoration: none !important;
+
+    color: #fff;
+    background-color: #000;
+}
+.btn-default i {
+    margin-top: 4px;
+    position: absolute;
+    top: 3px;
+    left: 9px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 1);
+    text-align: left;
+    text-shadow: 1px 1px 1px #000;
+}
+.btn-default div {
+
+    position: absolute;
+    top: 3px;
+    left: 36px;
+    right: 0px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.img-thumbs-wrapper {
+    position: relative;
+}
+
+
+.vfs-arrow {
+    font-size:15px;
+    position:absolute;
+    padding:10px 2px 5px 2px;
+    cursor:pointer;
+    text-align: center;
+    right: -140px;
+    top: 0;
+    bottom: 0;
+    width: 130px;
+}
+.vfs-arrow i {
+    font-size:50px;
+    line-height: 50px;
+    margin-left: 8px;
+
+}
+
+.bs-component h2 {
+    border-bottom: none;
+    margin-top: 0px;
+
+    font-size: 28px;
+}
+
+
+.img-thumbs {
+    height: 125px;
+    overflow:hidden;
+    cursor:pointer;
+}
+.vfs-sidebar-wrapper {
+    margin-top: 5px;
+}
+
+.vfs-tab-wrapper:after {
+    clear: both;
+    content: ' ';
+    display: block;
+}
+
+
+.price-top {
+    font-size: 34px;
+    float: right;
+    margin-top: 10px;
+    line-height: 32px;
+    font-weight: bold;
+    text-align: right;
+}
+
+
+.main-img-container {
+    position: relative;
+}
+.img-loader-spinner {
+    position: absolute;
+    font-size: 90px;
+    left: calc(50% - 45px);
+    top: calc(50% - 45px);
+    color: rgba(255,255,255,.6);
+}
+.downloads li {
+    list-style: none;
+    padding: 10px;
+    padding-right: 50px;
+    border: solid 1px rgba(0,0,0,.2);
+    background-color: #fff;
+    cursor: pointer;
+    height: 70px;
+    position: relative;
+    overflow: hidden;
+    font-weight: bold;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f7f7f7+48,ffffff+49,f6f6f6+100 */
+    background: rgb(255,255,255); /* Old browsers */
+    background: -moz-linear-gradient(-80deg,  rgba(255,255,255,1) 0%, rgba(247,247,247,1) 48%, rgba(255,255,255,1) 49%, rgba(246,246,246,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-80deg,  rgba(255,255,255,1) 0%,rgba(247,247,247,1) 48%,rgba(255,255,255,1) 49%,rgba(246,246,246,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(170deg,  rgba(255,255,255,1) 0%,rgba(247,247,247,1) 48%,rgba(255,255,255,1) 49%,rgba(246,246,246,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+.downloads li:hover {
+    border: solid 1px rgb(142, 142, 142);
+    background: rgb(240, 240, 240); /* Old browsers */
+
+}
+.downloads li:before {
+    font-family: FontAwesome;
+    content: '\f019';
+    font-size: 50px;
+    position: absolute;
+    right: 5px;
+    bottom: -8px;
+    color: rgba(0,0,0,.2);
+}
+.downloads li:hover:before {
+    color: rgba(0,0,0,.5);
+}
+.notice-bar {
+    padding: 5px;
+    text-shadow: 1px 1px 0px rgba(0,0,0,.6);
+}
+.notice-bar.hold {
+    background-color: #c50737;
+    color: #fff;
+    border: solid 1px #a90736;
+}
+.notice-bar.certified {
+    background-color: #3ec562;
+    color: #fff;
+    border: solid 1px #39a854;
+}
+
+.buttons-tools {
+    position: absolute;
+    right: 5px;
+    width: 322px;
+    top: 0px;
+}
+.stick-it.is_stuck {
+    padding-bottom: 5px;
+    margin-bottom: -5px;
+}
+.page-top-floats {
+    float: left;
+}
+.page-top-floats.backwrap {
+    width: 120px;
+    padding-top: 2px;
+    padding-right: 15px;
+}
+.page-top-floats h1 {
+    margin-bottom: 2px;
+    padding-bottom: 0px;
+}
+.page-top-floats .conversion {
+    font-size: 20px;
+}
+
+
+.backwrap .btn-default.van-for-sale {
+    height: 70px;
+}
+
+.backwrap .btn-default i {
+    bottom: 5px;
+    left: 0px;
+    right: 0;
+    top: auto;
+    text-align: center;
+    font-size: 35px;
+}
+.backwrap .btn-default div {
+    top: 2px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 20px;
+}
+.small {
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+.vehiclelist-details {
+    padding: 5px;
+}
+.vehiclelist-image-wrapper {
+    height: 214px;
+    overflow: hidden;
+}
+.vehicleresultsmainx:hover .vehiclelist-details {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f3f3f3+50,ededed+51,ffffff+100;White+Gloss+%232 */
+    background: rgb(255,255,255); /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  rgba(255,255,255,1) 0%, rgba(243,243,243,1) 50%, rgba(237,237,237,1) 51%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+}
+
+
+
+
+a.results-cat-btn {
+    border: solid 1px rgba(0, 0, 0, .2);
+    background-color: rgba(0,0,0,.05);
+    padding: 5px 10px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    color: #2a2a2a;
+    display: inline-block;
+    position: relative;
+}
+a.results-cat-btn:hover {
+    border: solid 1px rgba(0, 0, 0, .3);
+    background-color: rgba(0,0,0,.1);
+    color: #000;
+
+}
+
+a.results-cat-btn.active {
+    border: solid 1px #2d2d2d;
+    background-color: #2d2d2d;
+    padding: 5px 10px;
+    margin-right: 0px;
+    color: #fff;
+    font-weight: bold;
+}
+a.results-cat-btn.active:before {
+    border-style: solid;
+    border-width: 10px 18px 0 18px;
+    border-color: #2D2D2D transparent transparent transparent;
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: calc(50% - 18px);
+    content: ' ';
+}
+
+.vfs-count {
+
+font-size: 14px;
+
+font-weight: bold;
+
+text-align: center;
+
+/* border: solid 1px rgba(0, 0, 0, .2); */
+
+padding: 0px 0px;
+
+/* position: absolute; */
+
+top: 50px;
+
+right: 15px;
+
+left: 30px;
+
+/* width: 210px; */
+
+font-weight: normal;
+
+background-color: #000000;
+
+color: #fff;
+
+margin-bottom: -8px;
+}
+.currentvancount {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: bold;
+    padding: 5px 12px;
+}
+.currentvancounttxt {text-align: left;font-size: 16px;padding-top: 14px;font-weight: bold;}
+.totalfilterswrapper {
+    background-color: rgba(0,0,0,.05);
+    padding: 6px 12px 11px 12px;
+    text-align: left;
+    margin-top: -3px;
+    line-height: 17px;
+    display: none;
+}
+.totalfilters {
+
+margin-top: -3px;
+
+padding: 11px 3px 0px 3px;
+
+font-weight: bold;
+
+color: rgb(179, 32, 23);
+
+background-color: #ffffff;
+
+font-size: 21px;
+
+/* line-height: 25px; */
+
+height: 40px;
+
+width: 40px;
+
+text-align: center;
+
+/* border-radius: 50%; */
+
+display: inline-table;
+
+margin-top: 17px;
+
+margin-top: -2px;
+
+margin-right: 5px;
+}
+
+
+.browse-wrapper {
+    color: rgba(0,0,0,.9);
+    font-size: 15px;
+}
+.browse-items {
+    max-height: 250px;
+    overflow-y: auto;
+    margin-bottom: 30px;
+}
+
+.browse-heading {
+    border-top: solid 1px rgba(0,0,0,.2);
+    margin-top: 7px;
+    padding: 13px 0 5px 0;
+    cursor: pointer;
+    height: 40px;
+    position: relative;
+}
+.browse-wrapper .browse-category:first-of-type .browse-heading {
+    border: none;
+}
+.browse-heading.active {
+    font-weight: bold;
+}
+.browse-heading.search:before {
+    content: '\f002';
+    font-family: FontAwesome;
+    color: rgba(0,0,0,.7);
+    width: 12px;
+    font-size: 11px;
+    float: left;
+    margin-top: 5px;
+}
+.browse-heading:before {
+    width: 13px;
+    text-align: center;
+    content: '+';
+    color: rgba(0,0,0,.6);
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 6px;
+    line-height: 11px;
+    float: left;
+    margin-top: 5px;
+}
+.browse-heading:after {
+    content:  attr(data-selected);
+    position: absolute;
+    font-weight: normal;
+    right: 0;
+    color: rgba(255,255,255,1);
+    background-color: #39a854;
+    font-size: 12px;
+    line-height: 18px;
+    height: 19px;
+    width: 19px;
+    text-align: center;
+    border-radius: 50%;
+}
+.browse-heading.hidecount:after {
+    display: none;
+    content:  '';
+}
+.browse-heading.active:before {
+    content: '-';
+    font-size: 28px;
+    margin-top: 3px;
+}
+
+.browse-heading.search.active:before {
+
+    margin-top: 0px;
+}
+.browse-items li:last-child {
+
+}
+.browse-wrapper li {
+    list-style: none;
+    cursor: pointer;
+    padding: 2px 0 2px 5px;
+    border-top: solid 1px rgba(0,0,0,.05);
+    margin-left: 13px;
+    position: relative;
+    color: #424242;
+    height: 28px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.browse-wrapper li:after {
+
+    content: " (" attr(data-count) ")";
+
+}
+
+.browse-wrapper li.active {
+    color: #353535;
+    font-weight: bold;
+}
+.browse-wrapper li:hover {
+    background-color: rgba(0,0,0,.07);
+    font-weight: bold;
+}
+.browse-wrapper li:before {
+    font-family: FontAwesome;
+    content: '\f096';
+    display: inline-block;
+    padding-right: 7px;
+    color: rgba(0,0,0,.7);
+    font-weight: bold !important;
+    width: 20px;
+}
+
+
+
+
+
+.browse-wrapper li.active:before {
+    content: '\f14a';
+    color: rgba(0,0,0,.8);
+    /* font-size: 14px; */
+}
+
+
+
+
+
+.browse-wrapper input.vehicle-search {
+    border: solid 1px rgba(0,0,0,.3);
+    height: 36px;
+    width: calc(100% - 57px);
+    box-sizing: border-box;
+    float: left;
+    padding: 0 4px;
+    margin-left: 18px;
+}
+.browse-wrapper button.vehicle-search-btn {
+    border: solid 1px rgba(0,0,0,.3);
+    height: 36px;
+    width: 34px;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 5px;
+    font-size: 14px;
+    background-color: rgba(0,0,0,.06);
+}
+.browse-wrapper button.vehicle-search-btn:hover {
+
+    background-color: rgb(93, 204, 106);
+}
+
+
+.main-panel-right {
+    padding: 5px 0px 5px 5px;
+    border-top: none;
+    margin-right: -5px;
+    border: none;
+}
+
+
+
+#superimage-wrapper {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0,0,0,.8);
+    z-index: 9999;
+
+    display: none;
+}
+#superimage-wrapper.supersizevisible {
+
+}
+#superimage-wrapper #superimage-inner {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 35px 3px #000;
+}
+/*- XS  ---*/@media (min-width: 1px) and (max-width: 767px) {
+    #superimage-wrapper #superimage-inner {
+        border-radius: 0px;
+    }
+    .buttons-tools {
+        display: none;
+    }
+}
+#superimage-inner > img {
+    margin-left: auto;
+    margin-right: auto;
+}
+.slide.thumb {
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 2px rgba(0,0,0,.6);
+    opacity: 1;
+}
+.slide.thumb.active {
+    box-shadow: 0px 0px 0px 2px #0044cc;
+    opacity: 1;
+}
+#superimgageleft, #superimgageright, #superimgageclose, #normalimgageright, #normalimgageleft   {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,.7);
+    cursor: pointer;
+
+}
+#superimgageleft img, #superimgageright img, #superimgageclose img , #normalimgageright img , #normalimgageleft img   {
+    width: 100%;
+}
+#superimgageleft:hover, #superimgageright:hover, #superimgageclose:hover , #normalimgageleft:hover , #normalimgageright:hover   {
+    background-color: #fffcde;
+    box-shadow: 0px 0px 5px 2px #fff;
+}
+
+#superimgageleft, #normalimgageleft {
+    top: calc(50% - 40px);
+    left: 10px;
+}
+#superimgageright, #normalimgageright {
+    top: calc(50% - 40px);
+    right: 10px;
+}
+#superimgageclose {
+    top: 10px;
+    right: 10px;
+}
+
+
+
+
+
+/*- XXS  ----------------------------------------------------------------------------------------*/@media (min-width: 992px) and (max-width: 1219px) {
+    .img-thumbs-wrapper {
+        width: 100%;
+    }
+    .vfs-arrow {
+        display: none;
+    }
+    .backwrap .btn-default.van-for-sale {
+        height: 32px;
+        float: none;
+    }
+    .page-top-floats .conversion {
+        font-size: 17px;
+    }
+
+    .backwrap .btn-default i {
+        top: 3px;
+        left: 5px;
+        right: 0;
+        text-align: left;
+        font-size: 18px;
+    }
+    .backwrap .btn-default div {
+        top: 3px;
+        left: 25px;
+        right: 0;
+        text-align: left;
+        font-size: 18px;
+    }
+    .buttons-tools {
+        display: none;
+    }
+    .vehiclelist-image-wrapper {
+        height: auto;
+    }
+
+
+}
+/*- XS  ----------------------------------------------------------------------------------------*/@media (min-width: 560px) {
+    .img-thumbs-wrapper {
+        width: calc(100% - 140px);
+    }
+    .vfs-arrow {
+        display: block;
+    }
+    .vehiclelist-image-wrapper {
+        height: 257px;
+    }
+}
+/*- SM  ----------------------------------------------------------------------------------------*/@media (min-width: 768px) {
+
+    .img-thumbs-wrapper {
+        width: calc(100% - 140px);
+    }
+
+    .backwrap .btn-default.van-for-sale {
+        height: 70px;
+    }
+    .page-top-floats h1 {
+        font-size: 28px;
+    }
+
+    .page-top-floats .conversion {
+        font-size: 20px;
+    }
+    .backwrap .btn-default i {
+        bottom: 5px;
+        left: 0px;
+        right: 0;
+        top: auto;
+        text-align: center;
+        font-size: 35px;
+    }
+    .backwrap .btn-default div {
+        top: 2px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 20px;
+    }
+    .vehiclelist-image-wrapper {
+        height: 169px;
+    }
+
+}
+/*- MD  ----------------------------------------------------------------------------------------*/@media (min-width: 992px) {
+    .thumb-container {
+        height: 507px;
+    }
+    .page-top-floats h1 {
+        font-size: 32px;
+    }
+    .buttons-tools {
+        display: block;
+    }
+    .vehiclelist-image-wrapper {
+        height: 228px;
+    }
+}
+/*- LG ----------------------------------------------------------------------------------------*/@media (min-width: 1220px) {
+    .thumb-container {
+        height: 615px;
+    }
+    .vehiclelist-image-wrapper {
+        height: 214px;
+    }
+}
+
+
+
+
+
+/*- Mobile Only  -------------------------------------------------------------------------------*/@media (min-width: 1px) and (max-width: 767px) {
+
+    .vehicleresultsmainx {
+        margin-bottom: 20px;
+    }
+
+    a.vehicletabs.btnbar {
+        border: 1px solid #C7C7C7; 
+        display: block;
+        float: none;
+        border-bottom: none;
+    }
+    a.vehicletabs.btnbar.active {
+        padding: 10px 14px;
+        margin-top: 0;
+    }
+
+    a.vehicletabs.btnbar.active:before {
+        display: none;
+    }
+    a.vehicletabs.btnbar.active:after {
+        display: none;
+    }
+    .main-panel-right {
+        margin-right: -5px;
+        padding-left: 0;
+        margin-left: -5px;
+    }
+    .vehiclelist-image-wrapper {
+        height: auto;
+    }
+
+}
+
+
+
+
+
+
+#main_image_print {
+    display: none;
+}
+.print-break {
+    display: none;
+}
+.print-vehicle-legal {
+    display: none;
+}
+.print-header {
+    display: none;
+}
+
+
+
+@media print {
+    a:link:after,
+    a:visited:after {
+        content: "" !important;
+    }
+    .hideprint {
+        display: none !important;
+    }
+    .print-12 {
+        width: 100% !important;
+    }
+    .container {
+        width: 100%;
+        font-size: 14px;
+    }
+    header {
+        display: none;
+    }
+    .rowAll {
+        border-bottom: solid 1px rgba(0,0,0,.3);
+        width: 40%;
+        font-size: 14px !important;
+    }
+    .rowTitle {
+        font-size: 14px;
+        width: 110px;
+    }
+
+    .nobottomborder {
+        border-bottom: 0px !important;
+    }
+
+    #main_image_print {
+        display: block;
+        width: 400px;
+        position: absolute;
+        margin-top: 0px;
+        right: 15px;
+    }
+    footer {
+        display: none;
+    }
+    .print-van-image {
+        height: 80px;
+        overflow: hidden;
+    }
+    .print-break {
+        display: block;
+        width: 100%;
+        margin: 10px 0 10px 0;
+        border-bottom: 1px solid rgba(0,0,0,.3);
+    }
+    .print-vehicle-legal {
+        display: block;
+        font-size: 12px;
+        font-style: italic;
+
+    }
+    h4 {
+        font-size: 17px;
+        font-weight: bold;
+        margin-top: -18px;
+    }
+    .print-header {
+        display: block;
+
+    }
+    .print-header-bottom {
+        border-bottom: solid 2px #5a646b;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .print-start-new-page {
+        page-break-after: always;
+    }
+
+
+    .phone-number-print-header {
+        font-size: 28px;
+        font-weight: bold;
+        text-align: right;
+        margin-top: 35px;
+    }
+    .website-print-header {
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: underline;
+        color: #2b57a9;
+        text-align: right;
+    }
+
+
+}
+/*new code*/
+
+
+.paymentCalculatorForm .formlabel {
+    background-color: #F2F2F2;
+    padding-left: 5px;
+    width: 142px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    line-height: 30px;
+}
+.paymentCalculatorForm .control-group input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 5px 5px;
+    text-align: right;
+    border: solid 1px #f2f2f2;
+    background: #fff;
+    font-size: 18px;
+}
+.paymentCalculatorForm .control-group select {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 5px 5px;
+    text-align: right;
+    border: solid 1px #f2f2f2;
+    background: #fff;
+    font-size: 18px;
+}
+
+#paymentCalcAmount {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: right;
+}
+.monthlyPaymentsText {
+    font-size: 14px;
+    font-weight: normal;
+    text-align: right;
+}
+
+.payments-as-low-as {
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    font-size: 19px;padding: 10px;
+    background-color: #005cb9;
+    text-align: center;
+    border-radius: 2px;
+}
+.price-top .payments-as-low-as {
+    padding: 0 10px;
+}
+.payments-as-low-as .payment {
+    font-weight: bold;
+    font-size: 23px;
+    padding: 1px 2px;
+    border-radius: 4px;
+}
+.table.vehicleDiscountTable tbody tr td {
+    padding: 3px 0px 3px 8px;
+    vertical-align: middle;
+    color: #333333;
+    background-color: #e6fff9;
+}
+/*section-2*/
+
+.table.vehicleDiscountTable tbody tr td:first-child {
+    font-weight: bold;
+}
+.table.vehicleDiscountTable tbody tr:nth-child(1) td {
+    border-top: none;
+    background-color: #fff0f0;
+}
+.table.vehicleDiscountTable tbody tr:nth-child(1) td:first-child {
+    color: #bd0022;
+    font-size: 18px;
+}
+.table.vehicleDiscountTable tbody tr:last-child td {
+    border-top: none;
+    color: #333333;
+    border-top: solid 2px #656565;
+    background-color: transparent;
+}
+
+.price-before-discounts {
+    text-decoration: line-through;
+}
+.price-total-sellfor {
+    font-size: 36px;
+    line-height: 55px;
+    font-weight: bold;
+    color: #000000;
+}
+#afterAllDiscountsText {
+    font-size: 15px;
+    font-weight: normal;
+}
+.total-discounts-resutls {
+    position: absolute;
+    margin-top: -45px;
+    right: 0px;
+}
+.total-discounts-resutls-inner {
+    position: absolute;
+    right: 0px;
+    text-align: right;
+    font-size: 20px;
+    background-color: #fff;
+    padding: 4px;
+    border-radius: 2px;
+    color: #005cb9;
+    border: solid 2px #005cb9;
+}
+.total-discounts-resutls-inner .discount-shadow {
+    position: absolute;
+    bottom: -26px;
+    left: 0px; right: 0px;
+    height: 0px;border-radius: 50%;box-shadow: 0px 0 16px 1px rgba(0,0,0,1);
+    display: none;
+    transform: rotateY(24deg) rotateY(8deg) rotateZ(187deg) perspective(0px);
+}
+.total-discounts-sub-txt {
+    font-size: 11px;
+    margin-top: -6px;
+    font-weight: normal;
+}
+.chassis-price{
+
+}
+
+span.label_convcheck{
+    vertical-align: middle;
+}
+
+
+/*new code*/
